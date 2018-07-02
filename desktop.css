@@ -1,0 +1,120 @@
+body{
+  width: 1250px;
+  margin: 0 auto;
+  background-color: #DDDDDD
+}
+
+table {
+	border-collapse: collapse;
+	width:100%;
+}
+
+th{
+  background-color: #FFFFFF
+  border: #EEEEEE
+}
+th.t_top {
+    border-top: #00e8ff 4px solid;
+    background-color: #e3e3e3
+}
+td.tside {
+	border-bottom: #e3e3e3 1px dotted;
+	text-align: left;
+	padding: 10px;
+	font-weight: normal;
+  background-color: #e3e3e3
+}
+th.ttop {
+	border-top: #b3b3b3 4px solid;
+}
+td {
+	border-bottom: #e3e3e3 1px dotted;
+	text-align: left;
+	padding: 10px;
+  border: #EEEEEE
+}
+tr:hover {
+    background: #ffe600;
+    color: #000000;
+}
+
+
+h1{
+position: relative;
+padding: 0.2em 0.5em;
+background: -moz-linear-gradient(to right, rgb(255, 124, 111), #ffc994);
+background: -webkit-linear-gradient(to right, rgb(255, 124, 111), #ffc994);
+background: linear-gradient(to right, rgb(255, 124, 111), #ffc994);
+color: white;
+font-weight: lighter;
+box-shadow: 0 0 4px rgba(0, 0, 0, 0.56);
+}
+
+h2{
+position: relative;
+padding: 0.25em 0;
+}
+h2:after {
+content: "";
+display: block;
+height: 4px;
+background: -moz-linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+background: -webkit-linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+background: linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+}
+
+#bluemode{
+position: relative;
+padding: 0.25em 0;
+}
+#bluemode:after {
+content: "";
+display: block;
+height: 4px;
+background: -moz-linear-gradient(to right, rgb(115, 238, 255), #b3ddff);
+background: -webkit-linear-gradient(to right, rgb(115, 200, 255), #b3daff);
+background: linear-gradient(to right, rgb(115, 116, 255), #b3daff);
+}
+
+.sideul{
+  width: 175px
+}
+.thispage{
+  color: #FFFFFF;
+  background: #fca400; /* Old browsers */
+  background: -moz-linear-gradient(left, #fca400 0%, #ff3d3d 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #fca400 0%,#ff3d3d 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #fca400 0%,#ff3d3d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fca400', endColorstr='#ff3d3d',GradientType=1 ); /* IE6-9 */
+  font-size: 80%;
+  list-style-type: none!important;/
+}
+.otherpage{
+  font-size: 80%;
+  list-style-type: none!important;/
+}
+.spacehr{
+  color: #FFFFFF;
+  border: 0;
+}
+.wikilogo{
+  width: 250px;
+  height: 100px;
+  object-fit: cover;
+}
+.logo{
+  width: 600px
+}
+#main{
+  width: 1000px;
+  float: right;
+  background-color: #EEEEEE;
+}
+#side{
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  float: left;
+  background-color: #FFFFFF;
+  text-align: center;
+}
