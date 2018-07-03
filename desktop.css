@@ -4,39 +4,42 @@ body{
   background-color: #DDDDDD
 }
 
+
+
+
+/* 表  */
 table {
 	border-collapse: collapse;
 	width:100%;
 }
+th.left{
+  background-color: #ff00de;
+}
+th.other{
+  background-color: #0ad3ff;
+}
+td.left{
+  background-color: #ffa800;
+}
+td.other{
+  background-color: #ffde00;
+  color: #000000;
+}
+.price{
+  color: #FFFFFF;
+}
 
-th{
-  background-color: #FFFFFF
-  border: #EEEEEE
+
+
+/* ロゴ部分  */
+.wikilogobox{
+  background:#ddd url(img/1.png) center center / cover no-repeat fixed;
+  text-align: center;
 }
-th.t_top {
-    border-top: #00e8ff 4px solid;
-    background-color: #e3e3e3
+.logo{
+  width: 400px
 }
-td.tside {
-	border-bottom: #e3e3e3 1px dotted;
-	text-align: left;
-	padding: 10px;
-	font-weight: normal;
-  background-color: #e3e3e3
-}
-th.ttop {
-	border-top: #b3b3b3 4px solid;
-}
-td {
-	border-bottom: #e3e3e3 1px dotted;
-	text-align: left;
-	padding: 10px;
-  border: #EEEEEE
-}
-tr:hover {
-    background: #ffe600;
-    color: #000000;
-}
+
 
 
 h1{
@@ -101,10 +104,10 @@ background: linear-gradient(to right, rgb(115, 116, 255), #b3daff);
   width: 250px;
   height: 100px;
   object-fit: cover;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-.logo{
-  width: 600px
-}
+
 #main{
   width: 1000px;
   float: right;
