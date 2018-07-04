@@ -1,10 +1,38 @@
 body{
   width: 1250px;
   margin: 0 auto;
-  background-color: #DDDDDD
+
+  -webkit-background-size: 60px 60px;
+  -moz-background-size: 60px 60px;
+  background-size: 60px 60px;
+  background-color: #545454;
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%,
+              color-stop(.25, #444444), color-stop(.25, transparent),
+              color-stop(.5, transparent), color-stop(.5, #444444),
+              color-stop(.75, #444444), color-stop(.75, transparent),
+              to(transparent));
+  background-image: -webkit-linear-gradient(-45deg, #444444 25%, transparent 25%,
+            transparent 50%, #444444 50%, #444444 75%,
+            transparent 75%, transparent);
+  background-image: -moz-linear-gradient(-45deg, #444444 25%, transparent 25%,
+            transparent 50%, #444444 50%, #444444 75%,
+            transparent 75%, transparent);
+  background-image: -ms-linear-gradient(-45deg, #444444 25%, transparent 25%,
+            transparent 50%, #444444 50%, #444444 75%,
+            transparent 75%, transparent);
+  background-image: -o-linear-gradient(-45deg, #ffde00 25%, transparent 25%,
+            transparent 50%, #444444 50%, #ffde00 75%,
+            transparent 75%, transparent);
+  background-image: linear-gradient(-45deg, #444444 25%, transparent 25%,
+            transparent 50%, #444444 50%, #444444 75%,
+            transparent 75%, transparent);
+color: #FFFFFF
+
 }
 
-
+.toplogo{
+  width: 400px;
+}
 
 
 /* 表  */
@@ -32,53 +60,65 @@ td.other{
 
 
 /* ロゴ部分  */
-.wikilogobox{
-  background:#ddd url(img/1.png) center center / cover no-repeat fixed;
+.space50{
+  background-color: #FFFFFF;
+  height: 50px;
+  color: #000000;
   text-align: center;
+  font-size: 25px;
+}
+.wikilogobox{
+  background:#ddd url(img/img_.png) bottom center / cover no-repeat fixed;
+  text-align: center;
+  height: 300px;
+  position:relative;
+  background-color: #FFFFFF;
 }
 .logo{
-  width: 400px
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+    width: 400px
 }
 
 
 
 h1{
 position: relative;
-padding: 0.2em 0.5em;
-background: -moz-linear-gradient(to right, rgb(255, 124, 111), #ffc994);
-background: -webkit-linear-gradient(to right, rgb(255, 124, 111), #ffc994);
-background: linear-gradient(to right, rgb(255, 124, 111), #ffc994);
+padding: 0.5em;
+background: #a6d3c8;
 color: white;
-font-weight: lighter;
-box-shadow: 0 0 4px rgba(0, 0, 0, 0.56);
+}
+
+h1::before {
+position: absolute;
+content: '';
+top: 100%;
+left: 0;
+border: none;
+border-bottom: solid 15px transparent;
+border-right: solid 20px rgb(149, 158, 155);
 }
 
 h2{
 position: relative;
-padding: 0.25em 0;
-}
-h2:after {
-content: "";
-display: block;
-height: 4px;
-background: -moz-linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
-background: -webkit-linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
-background: linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+padding: 0.5em;
+background: #ffde00;
+color: black;
 }
 
-#bluemode{
-position: relative;
-padding: 0.25em 0;
+h2::before {
+position: absolute;
+content: '';
+top: 100%;
+left: 0;
+border: none;
+border-bottom: solid 15px transparent;
+border-right: solid 20px #b09900;
 }
-#bluemode:after {
-content: "";
-display: block;
-height: 4px;
-background: -moz-linear-gradient(to right, rgb(115, 238, 255), #b3ddff);
-background: -webkit-linear-gradient(to right, rgb(115, 200, 255), #b3daff);
-background: linear-gradient(to right, rgb(115, 116, 255), #b3daff);
-}
-
 .sideul{
   width: 175px
 }
@@ -111,7 +151,6 @@ background: linear-gradient(to right, rgb(115, 116, 255), #b3daff);
 #main{
   width: 1000px;
   float: right;
-  background-color: #EEEEEE;
 }
 #side{
   position: fixed;
