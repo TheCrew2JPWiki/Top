@@ -149,7 +149,7 @@ border-right: solid 20px #b09900;
 }
 
 #main{
-  width: 1000px;
+  width: 950px;
   float: right;
 }
 #side{
@@ -159,4 +159,5 @@ border-right: solid 20px #b09900;
   float: left;
   background-color: #FFFFFF;
   text-align: center;
+  opacity: 0.8;
 }
